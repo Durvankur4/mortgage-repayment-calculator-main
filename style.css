@@ -33,7 +33,9 @@ body{
 .light-color{
     color: var(--slate-700);
 }
-
+.heavyfont{
+    font-weight: 900;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -46,11 +48,11 @@ body{
 .col-left
 {
     width: 50%;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 .col-right{
     width: 50%;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0 0 0 5rem;
     background-color: var(--slate-900);
 }
@@ -133,6 +135,13 @@ input{
     display: flex;
     flex-direction: column;
 }
+.radio-div p{
+    /* background-color: hsla(61, 70%, 52%, 0.2); */
+   
+   
+}
+
+
 
 .calculate-repayments{
     margin-top: 1rem;
@@ -142,4 +151,61 @@ input{
     border-radius: 1rem;
     display: flex;
     align-items: center;justify-content: space-between;
+}
+button:hover,.calculate-repayments:hover{
+    cursor: pointer;
+    size: 1.1;
+    transition: ease-in-out .2s;
+}
+
+
+/* tight side */
+.col-right{
+    color: var(--white);
+}
+.empty-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.empty-result p{
+    margin: 1rem 0;
+    
+}
+.empty-result :nth-child(2){
+    font-weight: 900;
+}
+.empty-result {
+    /* display: none; */
+}
+.completed{
+   display: none;
+}
+
+.description{
+    color: var(--slate-100);
+}
+
+.repayment-box{
+    
+    margin: 1rem;
+    background-color: var(--black);
+}
+.monthly-repayments,.total-repay{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.monthly-repayments span,.total-repay span{
+color: var(--lime);
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.monthly-repayments span{
+    font-size: 3rem;
+
 }

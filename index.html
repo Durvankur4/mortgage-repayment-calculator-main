@@ -35,7 +35,7 @@
       <form id="mortgage-form">
         <div class="form-item">
           <label class="light-color" for="mortgage-amount">Mortgage Amount</label>
-          <div class="form-flex amount-flex" >
+          <div class="form-flex amount-flex">
             <p class="symbol">$</p>
             <input type="number" id="mortgage-amount" placeholder="0" required />
           </div>
@@ -75,7 +75,7 @@
             <div class="radio-div">
               <p>
                 <input type="radio" value="repayment" name="mortgage-type" />Repayment
-              
+
               </p>
               <p>
                 <input type="radio" value="interest-only" name="mortgage-type">Interest Only
@@ -101,19 +101,22 @@
     </div>
     <!-- Empty results end -->
     <!-- complete results start -->
-    <div class="col-right completed-result" hidden>
-      <p>Your results</p>
-      <p>Your results are shown below based on the information you
+    <div class="col-right completed ">
+      <p class="header">Your results</p>
+      <p class="description">Your results are shown below based on the information you
         provided. To adjust the results, edit the form and click “calculate
         repayments” again.</p>
-      <div class="monthly-repayments">
-        <p>Your monthly repayments</p>
-        <span class="calculations"></span>
+      <div class="repayment-box">
+        <div class="monthly-repayments">
+          <p>Your monthly repayments</p>
+          <span class="calculations">$345</span>
+        </div>
+        <div class="total-repay">
+          <p>Total you'll repay over the term</p>
+          <span class="total-repay">$6786768</span>
+        </div>
       </div>
-      <div class="total-repay">
-        <p>Total you'll repay over the term</p>
-        <span class="total-repay"></span>
-      </div>
+
     </div>
     <!-- complete results end -->
     <!-- right col end -->
