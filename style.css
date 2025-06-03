@@ -1,16 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --lime: hsl(61, 70%, 52%);
     --red: hsl(4, 69%, 50%);
     --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
     --slate-100: hsl(202, 86%, 94%);
     --slate-300: hsl(203, 41%, 72%);
     --slate-500: hsl(200, 26%, 54%);
     --slate-700: hsl(200, 24%, 40%);
     --slate-900: hsl(202, 55%, 16%);
 }
-*{
+html{
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
+
+body{
+    background-color: var(--slate-100);
+    color: var(--black);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
