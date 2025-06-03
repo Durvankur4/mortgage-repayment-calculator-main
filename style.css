@@ -14,7 +14,7 @@
     --slate-700: hsl(200, 24%, 40%);
     --slate-900: hsl(202, 55%, 16%);
 }
-html{
+html,button{
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -26,5 +26,120 @@ body{
     color: var(--black);
     font-size: 1rem;
     line-height: 1.5;
+    
+    
 }
 
+.light-color{
+    color: var(--slate-700);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 1rem ;
+    border-radius: 1rem ;
+    background-color: var(--white);
+    display: flex;
+    overflow: hidden;
+}
+.col-left
+{
+    width: 50%;
+    padding: 1rem;
+}
+.col-right{
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0 0 0 5rem;
+    background-color: var(--slate-900);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    margin:  1rem 0 2rem;
+}
+.col-left h1{
+    display: inline;
+    font-size: 1rem;
+    
+}
+
+.clear-all{
+    font: inherit;
+    display: inline-block;
+    margin-left: auto;
+    text-decoration: underline;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+label{
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input{
+    font: inherit;
+}
+
+
+.form-flex p{
+    display: block;
+    padding:  .5rem;
+    text-align: center;
+    background-color: var(--slate-100);
+}
+.form-flex input{
+    
+    border: none;
+    border-radius: 0.25rem;
+    width: 100%;
+    text-align: right;
+    
+}
+.form-alert{
+    display: none;
+}
+.term-rate-flex{
+    display: flex;
+    gap: 1fr;
+}
+
+.form-flex{
+    display: flex;
+    gap: 1fr;
+    border: var(--black)1px solid;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.radio-div p{
+    display: block;
+    width: 100%;
+    border: var(--black)1px solid;
+    border-radius: .5rem;
+    margin:.5rem 0;
+    padding: .5rem;
+    
+}
+.radio-div p input{
+    margin-right: 1rem;
+}
+.radio-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate-repayments{
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--lime);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;justify-content: space-between;
+}

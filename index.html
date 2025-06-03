@@ -30,12 +30,12 @@
     <div class="col-left">
       <div class="header">
         <h1>Mortgage Calculator</h1>
-        <button class="clear-all">Clear All</button>
+        <button class="clear-all light-color">Clear All</button>
       </div>
       <form id="mortgage-form">
         <div class="form-item">
           <label class="light-color" for="mortgage-amount">Mortgage Amount</label>
-          <div class="form-flex">
+          <div class="form-flex amount-flex" >
             <p class="symbol">$</p>
             <input type="number" id="mortgage-amount" placeholder="0" required />
           </div>
@@ -48,7 +48,7 @@
           <div class="term-rate-flex">
             <div class="term-item">
               <label class="light-color" for="mortgage-term">Mortgage Term</label>
-              <div class="term-flex">
+              <div class="term-flex form-flex">
                 <input type="number" id="mortgage-term" name="mortgage-term" required />
                 <p class="term-years">Years</p>
               </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="rate-item">
               <label class="light-color" for="interest-rate">Interest Rate</label>
-              <div class="rate-flex">
+              <div class="rate-flex form-flex">
                 <input type="number" id="interest-rate" name="interest-rate" required />
                 <p class="rate-percentage">%</p>
               </div>
@@ -73,8 +73,13 @@
           <div class="mortgage-type ">
             <label for="mortgage-type" class="light-color">Mortgage Type</label>
             <div class="radio-div">
-              <input type="radio" value="repayment" name="mortgage-type" />Repayment
-              <input type="radio" value="interest-only" name="mortgage-type">Interest Only
+              <p>
+                <input type="radio" value="repayment" name="mortgage-type" />Repayment
+              
+              </p>
+              <p>
+                <input type="radio" value="interest-only" name="mortgage-type">Interest Only
+              </p>
             </div>
             <button class="calculate-repayments"><img src="./assets/images/icon-calculator.svg"
                 alt="calc">calculate-repayments</button>
@@ -123,7 +128,7 @@
 
   <!-- Completed results start -->
 
-  
+
 
   <!-- Completed results end -->
 
