@@ -26,9 +26,26 @@ body{
     color: var(--black);
     font-size: 1rem;
     line-height: 1.5;
-    
+    height: 100vh; /* Ensure body takes full height */
+    display: flex; /* Apply flexbox to body */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin: 0; /* Remove default margin */
     
 }
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+    max-width: 1200px;
+    border-radius: 1rem;
+    background-color: var(--white);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+}
+
 
 .light-color{
     color: var(--slate-700);
@@ -36,7 +53,7 @@ body{
 .heavyfont{
     font-weight: 900;
 }
-.container{
+/* .container{
     max-width: 1200px;
     margin: 0 auto;
     margin: 1rem ;
@@ -44,7 +61,7 @@ body{
     background-color: var(--white);
     display: flex;
     overflow: hidden;
-}
+} */
 .col-left
 {
     width: 50%;
@@ -106,6 +123,7 @@ input{
 }
 .term-rate-flex{
     display: flex;
+    justify-content: space-between;
     gap: 1fr;
 }
 
@@ -135,10 +153,11 @@ input{
     display: flex;
     flex-direction: column;
 }
-.radio-div p{
-    /* background-color: hsla(61, 70%, 52%, 0.2); */
-   
-   
+.selected {
+    background-color: hsla(61, 70%, 52%, 0.2);
+    border: 2px solid var(--lime);
+    font-weight: 700;
+    color: var(--black);
 }
 
 
