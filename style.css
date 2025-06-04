@@ -43,7 +43,7 @@ body{
     border-radius: 1rem;
     background-color: var(--white);
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -119,6 +119,7 @@ input{
     
 }
 .form-alert{
+    color: var(--red);
     display: none;
 }
 .term-rate-flex{
@@ -196,19 +197,21 @@ button:hover,.calculate-repayments:hover{
 .empty-result :nth-child(2){
     font-weight: 900;
 }
-.empty-result {
-    /* display: none; */
+.hide{
+    display: none;
 }
-.completed{
-   display: none;
+.show
+{
+    display: block;
 }
+
 
 .description{
     color: var(--slate-100);
 }
 
 .repayment-box{
-    
+    border-radius: .5rem;
     margin: 1rem;
     background-color: var(--black);
 }
